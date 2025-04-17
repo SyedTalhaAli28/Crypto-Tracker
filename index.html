@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Price & Wallet Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .coin, .wallet {
+      background: #1e293b;
+      margin: 10px auto;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #22c55e;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Crypto Prices</h1>
+  <div id="prices"></div>
+
+  <h1>Ethereum Wallet Tracker</h1>
+  <div class="wallet">
+    <input type="text" id="walletAddress" placeholder="Enter ETH Wallet Address" />
+    <br>
+    <button onclick="getWalletBalance()">Check Balance</button>
+    <p id="walletBalance"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
